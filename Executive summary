@@ -1,0 +1,71 @@
+### 📌 Executive Summary
+
+The **Netflix SQL Analysis Project** was developed as a hands-on demonstration of my expertise in data analysis using **PostgreSQL**. The primary objective was to showcase the ability to structure, query, and derive actionable insights from a real-world-style media dataset — in this case, Netflix’s content catalog. The project spans multiple analytical layers, combining raw SQL queries with deeper pattern discovery and strategic thinking.
+
+---
+
+### 🎯 Objectives
+
+- Design and create a clean, normalized SQL table to store Netflix content data
+- Perform exploratory data analysis to extract meaningful patterns
+- Use SQL to answer specific business-relevant questions such as:
+  - What content types dominate the platform?
+  - Which countries and genres are most represented?
+  - Who are the most frequent contributors (directors, actors)?
+  - What types of content show up under specific themes (e.g., violence)?
+
+---
+
+### 🧩 Key Features & Techniques
+
+- **Schema Creation & Data Structuring**: Designed a custom SQL table to house Netflix metadata, defining appropriate data types to support analytical querying.
+
+- **Content-Type Analysis**: Compared and counted the number of movies versus TV shows to identify platform focus.
+
+- **Rating Trends**: Leveraged **CTEs** and **window functions** to discover the most frequent rating for both movies and TV shows.
+
+- **Temporal Analysis**: Identified trends over time, including content released in specific years and additions made in the last five years.
+
+- **Geo-Based Insights**: Unpacked comma-separated country fields to determine the top five countries with the most content.
+
+- **Content Duration Analysis**: Determined the longest movies using string manipulation and casting techniques.
+
+- **Director-Specific Queries**: Filtered content to highlight the work of individual creators like *Rajiv Chilaka*, using `UNNEST()` on multi-valued columns.
+
+- **Genre Breakdown**: Categorized all content by genre using array functions, providing a frequency distribution across types.
+
+- **India-Specific Insights**: Calculated yearly content release in India and the average contribution by year to assess localized trends.
+
+- **Actor-Focused Analytics**: Identified actors like *Salman Khan* and determined their activity across years. Also ranked the top 10 actors in Indian content by frequency of appearances.
+
+- **Thematic Tagging**: Applied keyword-based classification to categorize content as "Violent" or "Not Violent" based on descriptions.
+
+---
+
+### 🔍 Tools & SQL Concepts Applied
+
+- **PostgreSQL**
+- Common Table Expressions (CTEs)
+- Window Functions (e.g., `RANK() OVER`)
+- Date Handling (`TO_DATE`, `EXTRACT`, intervals)
+- String Operations (`SPLIT_PART`, `STRING_TO_ARRAY`, `UNNEST`, `ILIKE`)
+- Aggregations and Filtering
+- Conditional Logic with `CASE WHEN`
+
+---
+
+### 📈 Business & Analytical Value
+
+This project mirrors the kind of real-world SQL analysis that a Data Analyst or BI Developer might perform for a content streaming service. From content planning to regional performance tracking and creator profiling, each query aligns with decisions a business team might need to make. It demonstrates my ability to write optimized SQL queries that scale and are interpretable by non-technical stakeholders when converted into dashboards or reports.
+
+---
+
+### 📚 Learning Outcomes
+
+- Reinforced best practices in SQL for handling semi-structured text data
+- Strengthened use of advanced SQL functions for insight generation
+- Developed a robust approach to writing modular and reusable queries
+- Built confidence in using SQL for real-time decision support and EDA
+
+---
+
